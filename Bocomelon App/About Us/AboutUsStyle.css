@@ -1,0 +1,291 @@
+.aboutUs{
+    height: 25%;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    bottom: 0%;
+    overflow: hidden;
+}
+/* Wave Curve From ShapeDivider.App */
+.aboutUs .custom-shape-divider-top-1723324298 {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.aboutUs .custom-shape-divider-top-1723324298 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: .9rem;
+}
+.aboutUs .custom-shape-divider-top-1723324298 .shape-fill {
+    fill: aliceblue;
+}
+
+.aboutUs .imageContainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(AboutUsImage.jpg);
+    background-size: cover;
+}
+.aboutUs .contentContainer{
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-left: 3%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(2px);
+    font-family: "Zain";
+    color: white;
+}
+.aboutUs .contentContainer h1{
+    font-size: 1rem;
+    font-family: "Zain";
+}
+.aboutUs .contentContainer p{
+    font-size: .3rem;
+    width: 90%;
+    font-family: cursive;
+    color: aliceblue;
+}
+.aboutUs .contentContainer p span{
+    font-weight: bolder;
+    color: orange;
+}
+.aboutUs .contentContainer .detailText{
+    display: none;
+    font-size: .25rem;
+}
+.aboutUs .contentContainer .toggleDetailsBtn{
+    position: relative;
+    bottom: .5rem;
+    height: .3rem;
+    width: 1rem;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    color: rgba(240, 248, 255, .8);
+    outline: none;
+    border: none;
+    font-size: 0.18rem;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .5;
+}
+.aboutUs .contentContainer .toggleDetailsBtn:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.aboutUs .contentContainer .sendFeedbackBtn{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    height: .5rem;
+    width: 90%;
+    background-color: rgb(42, 134, 255);
+    font-size: .20rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.aboutUs .contentContainer .sendFeedbackBtn:hover{
+    color: rgba(240, 248, 255, .8);
+    box-shadow:0px 0px 5px 5px rgba(255, 255, 255, 0.1);
+}
+
+.aboutUs .feedbackDisplay{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(42, 134, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);   
+}
+
+.aboutUs .feedbackContainer{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    font-size: .10rem;
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 9%;
+}
+
+.aboutUs .feedbackContainer h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: .27rem;
+}
+.aboutUs .feedbackContainer hr{
+    margin-top: .2rem;
+}
+.aboutUs .feedbackContainer .nameContainer{
+    margin-left: 3%;
+    margin-top: 5%;
+}
+.aboutUs .feedbackContainer .nameContainer input{
+    outline: none;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: .02rem;
+    padding: 1%;
+}
+.aboutUs .feedbackContainer .emailContainer{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.aboutUs .feedbackContainer .emailContainer input{
+    outline: none;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: .02rem;
+    padding: 1%;
+}
+.aboutUs .feedbackContainer .overallExperienceContainer{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.aboutUs .feedbackContainer .overallExperienceContainer label{
+    display: flex;
+    cursor: pointer;
+    font-size: .11rem;
+    padding-top: .05rem;
+    padding-right: .2rem;
+}
+.aboutUs .feedbackContainer .overallExperienceContainer h3{
+    display: inline-block;
+    margin-left: .1rem;
+}
+.aboutUs .feedbackContainer .overallExperienceContainer input{
+    cursor: pointer;
+}
+
+.aboutUs .feedbackContainer .suggestionsContainer{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.aboutUs .feedbackContainer .suggestionsContainer textarea{
+    outline: none;
+    border: 1px solid grey;
+    border-radius: .03rem;
+    padding: 1%;
+    width: 90%;
+}
+
+.aboutUs .feedbackContainer form button{
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 0.15rem;
+    margin-top: 3%;
+    background-color: #18bd5b;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 30%;
+    padding: 1.5% 0%;
+    cursor: pointer;
+}
+
+/* Media Queries For Responsiveness */
+@media (max-width: 1200px) and (min-width: 1100px){
+    html{
+        font-size: 95px;
+    }
+}
+@media (max-width: 1100px){
+    .aboutUs .contentContainer{
+        padding-top: 10%;
+    }
+}
+@media (max-width: 1100px) and (min-width: 1000px){
+    html{
+        font-size: 90px;
+    }
+}
+@media (max-width: 1000px) and (min-width: 920px){
+    html{
+        font-size: 85px;
+    }
+}
+@media (max-width: 920px) and (min-width: 830px){
+    html{
+        font-size: 80px;
+    }
+}
+@media (max-width: 1100px){
+    .aboutUs .contentContainer{
+        padding-top: 15%;
+    }
+}
+@media (max-width: 830px) and (min-width: 730px){
+    html{
+        font-size: 75px;
+    }
+}
+@media (max-width: 730px) and (min-width: 650px){
+    html{
+        font-size: 70px;
+    }
+
+}
+@media (max-width: 650px) and (min-width: 570px){
+    html{   
+        font-size: 75px;
+    } 
+}
+@media (max-width: 650px){
+    .aboutUs .feedbackContainer{
+        width: 80%;
+        height: 75%;
+        border-radius: .1rem;
+    }
+}
+@media (max-width: 570px){
+    .aboutUs .contentContainer{
+        padding-top: 20%;
+    }
+}
+@media (max-width: 570px) and (min-width: 500px){
+    html{
+        font-size: 70px;
+    }
+}
+@media (max-width: 500px) and (min-width: 400px){
+    html{
+        font-size: 65px;
+    }
+}
+@media (max-width: 400px) and (min-width: 300px){
+    html{
+        font-size: 60px;
+    }
+    .aboutUs .feedbackContainer{
+        width: 80%;
+        height: 60%;
+    }
+}
