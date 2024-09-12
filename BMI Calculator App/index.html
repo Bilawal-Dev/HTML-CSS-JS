@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <div class="ageContainer">
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age">
+        </div>
+
+        <div class="genderContainer">
+            <div class="maleGender">
+                <input type="radio" id="male" value="male" name="gender">
+                <label for="male">Male</label>
+            </div>
+            <div class="femaleGender">
+                <input type="radio" id="female" value="female" name="gender">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div class="heightweightContainer">
+            <div class="heightContainer">
+                <label for="height">Height(cm)
+                    <input type="number" id="height" name="height">
+                </label>
+            </div>
+            <div class="weightContainer">
+                <label for="weight">Weight(kg)
+                    <input type="number" id="weight" name="weight">
+                </label>
+            </div>
+        </div>
+
+        <button id="calculateBMI">Calculate BMI</button>
+        
+        <div class="bmiDisplay">
+            <h2>Your BMI Is</h2>
+            <h3>00.00</h3>
+            <p>You Are <span>Healthy</span></p>
+        </div>
+
+    </div>
+
+    <div class="coverRequiredDisplay">
+        <div class="requiredDisplay">
+            <p>All Fields Are Requried!</p>
+            <i class="ri-close-large-line"></i>        
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
