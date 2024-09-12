@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Convertor</h1>
+        <h2>Enter Amount</h2>
+        <input type="text" id="amount" name="amount">
+        <div class="countriesFromTo">
+            <div class="countryFrom">
+                <h3>From</h3>
+                <div class="country">
+                    <img src="https://flagsapi.com/US/flat/64.png">                    
+                    <select name="countryFrom" id="countryFrom">                        
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+            </div>
+            <i class="ri-arrow-left-right-fill"></i>
+            <div class="countryTo">
+                <h3>To</h3>
+                <div class="country">
+                    <img src="https://flagsapi.com/PK/flat/64.png">
+                    <select name="countryTo" id="countryTo">
+                        <option value="PKR">PKR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <h3 id="calculatedAmount">1 USD = 280 PKR</h3>
+        <button id="getExchangeRate">Get Exchange Rate</button>
+    </div>
+    <script src="countryList.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
