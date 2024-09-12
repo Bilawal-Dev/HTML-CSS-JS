@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Winning Animation -->
+    <div class="confetti">
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+    </div>
+
+    <!-- Starting Menu Initial Interface -->
+    <div id="startingMenu">
+        <h1>Tic-Tac-Toe Game</h1>
+        <input id="player1" type="text" placeholder="Enter Player-1 Name">
+        <input id="player2" type="text" placeholder="Enter Player-2 Name">
+        <button id="startGame">Start Game</button>
+        <div class="decorativeCircle" id="decorativeCircle1"></div>
+        <div class="decorativeCircle" id="decorativeCircle2"></div>
+        <div class="decorativeCircle" id="decorativeCircle3"></div>
+    </div>
+
+    <!-- Headings For Displaying Information -->
+    <h1 id="firstTurn">First Turn Is Of : </h1>
+    <h1 id="winnerDisplay">The Winner Of Game Is : </h1>
+    <h1 id="currentPlayer">Current Player Turn : </h1>
+
+    <!-- Tic-Tac-Toe Game Interface -->
+    <div id="container">
+        <div id="row1">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+        </div>
+        <div id="row2">
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+        </div>
+        <div id="row3">
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</html>
