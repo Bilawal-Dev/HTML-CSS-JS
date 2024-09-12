@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <div class="todoListAppContainer">
+        <header>
+            <h1>To-Do List</h1>
+            <img src="images/icon.png">
+        </header>
+
+        <div class="addTaskContainer">
+            <input type="text" placeholder="Add Your Task" id="addTask" name="addTask">
+            <button id="addTaskBtn">Add</button>
+        </div>
+
+        <div class="tasksContainer">
+            <!-- <div class="task">
+                <img id="uncheckedImg" src="images/unchecked.png">
+                <h2>Create A Javascript Project</h2>
+                <i class="ri-edit-2-fill"></i>
+                <i class="ri-close-large-fill"></i>
+            </div> -->
+
+            <!-- <div class="task">
+                <img id="uncheckedImg" src="images/unchecked.png">
+                <h2>Upload It Online</h2>
+                <i class="ri-edit-2-fill"></i>
+                <i class="ri-close-large-fill"></i>
+            </div> -->
+    </div>
+
+    <div class="coverRequiredDisplay">
+        <div class="requiredDisplay">
+            <p>Enter A Task To Add In To-Do List!</p>
+            <i id='closeCoverRequiredDisplay' class="ri-close-large-line"></i>        
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
